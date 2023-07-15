@@ -1,0 +1,111 @@
+/* ! General */
+body {background-color: #141414 !important;}
+
+/* ! Navbar */
+.myNavNav {background-color: #141414 !important}
+.myNav a{color: rgb(182, 182, 182); transition: scale linear 0.2s;}
+.ml-auto {margin-left: auto !important;}
+.logo {width: 120px;}
+.myNavIcon{font-size: 20px; margin-top: 5px;}
+.myNavIcon2{font-size: 20px; margin-top: 5px;color: #a8a7a7; border: 1px solid #a5a5a5; padding: 5px 10px;transition: scale linear 0.3s;}
+.profileImg {width: 35px;}
+.myDropIcon {background-color: #141414 !important;}
+.nav-link.active {color: white !important;}
+.my2Nav li a:hover{color: red !important;font-weight: bold;}
+
+/* ! Navbar Hamburger Menu */
+.navbar-toggler:active,
+.navbar-toggler:focus {outline: none !important; box-shadow: none !important; border: none !important;}
+.navbar-toggler {outline: none;}
+.navbar-toggler-icon {background-image: none;}
+.navbar-toggler .top-bar,
+.navbar-toggler .middle-bar,
+.navbar-toggler .bottom-bar {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: all 0.5s;
+}
+.navbar-toggler.collapsed .top-bar {transform: rotate(45deg);position: relative;top: 6px;}
+.navbar-toggler.collapsed .middle-bar {display: none;}
+.navbar-toggler.collapsed .bottom-bar {transform: rotate(-45deg);position: relative;top: -3px;}
+
+
+
+/* ! Navbar HOVER */
+.myNav a:hover {color: white; scale: 1.2; margin: 0 2px;}
+.myNavIcon2:hover {color: white;scale: 1.1;}
+
+/* ! Modal */
+
+.modal-content {background-color: rgba(0, 0, 0, 0.85) !important;}
+.text-info{color: red !important}
+
+/* ! Main Content */
+.myTitle {color: #c6c5c5 !important;}
+.scroll-horizontal {max-width: 100%; display: flex; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none;-ms-overflow-style: none;}
+.scroll-horizontal::-webkit-scrollbar { display: none}
+.scrollLeft, .scrollRight {cursor: pointer;color: white;font-size: 50px; display: none;}
+.scrollLeft {position: absolute;left: 10px;top: 100px; z-index: 2;}
+.scrollRight {position: absolute;right: 10px;top: 100px; z-index: 2;}
+.myButtonHoverArrow:hover .scrollLeft, 
+.myButtonHoverArrow:hover .scrollRight {
+  display: block;
+}
+.col{padding: 2px;}
+.card:hover{z-index: 1;}
+
+
+
+
+
+/* ! Card */
+.card {position: relative; overflow: hidden;border: none; --bs-card-inner-border-radius: none; --bs-card-border-radius: none; transition: scale linear .2s;}
+.card:hover {scale: 1.1;border-radius: 11px;}
+.card-img-top {width: 100%;}
+.card img {width: 200px;height: 140px; object-fit:fill;cursor: pointer;}
+.myWatchIcon {font-size: 20px; border-radius: 50%; background-color: red;padding: 5px;}
+.myHoverTitle{color: red !important;}
+
+.card-body {
+  background: rgba(0, 0, 0, 0.712);
+  color: white;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  opacity: 0;
+  transition: opacity linear 0.5s;
+}
+
+.card:hover .card-body {display: block;}
+.card-body:hover{opacity: 1;}
+
+/* ! Footer */
+
+footer {color: #a8a7a7 !important;width: 75%;margin: auto;margin-top: 80px;}
+.footer-row{display: flex; justify-content: space-between;}
+.footer-end{display: flex;flex-direction: column;}
+.footer-btn{width: 110px;padding: 5px 0;background-color: transparent;color: #a8a7a7 !important;border: 1px solid #a8a7a7;}
+.social-footer-icon{font-size: 30px; margin: 5px;}
+
+.footer-btn:hover{color: white !important;border: 1px solid white;}
+.social-footer-icon:hover{color: white;font-size: 31px;cursor: pointer;}
+footer p:hover{color: white;cursor: pointer;}
+
+@media (max-width: 950px) {
+  footer{width: 95%;}
+}
+
+@media (max-width: 768px) {
+   footer{display: flex;align-items: center;justify-content: center;flex-direction: column;width: 100%;margin-top: 50px;}
+   .footer-row{display: none;}
+   .footer-end{display: flex;flex-direction: column;align-items: center;}
+}

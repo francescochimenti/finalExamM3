@@ -1,0 +1,1909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ! Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-transparent myNav p-1 sticky-top myNavNav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="logo" src="assets/Netflix_Logo_RGB.png" alt=""></a>
+            <button class="navbar-toggler m-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <span class="top-bar"></span>
+                    <span class="middle-bar"></span>
+                    <span class="bottom-bar"></span>
+                </span>
+            </button>                       
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto text-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Tv Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recently Added</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My List</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto d-flex align-items-center text-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white myNavIcon" href="#"><ion-icon name="search"></ion-icon></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">KIDS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white myNavIcon" href="#"><ion-icon name="notifications"></ion-icon></a>
+                    </li>
+                </ul>
+            </div>      
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown dropdown-menu-end">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="profileImg" src="assets/profile.png" alt="">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end position-absolute myDropIcon bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item bg-transparent" href="#">My Account</a>
+                        <a class="dropdown-item bg-transparent" href="#">Settings</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- ! 2nd Navigation -->
+
+    <div class="navSection p-3 w-100 d-flex justify-content-between align-items-center">
+        <div class="d-flex flex-row">
+        <h2 class="fw-bold text-white me-5">TV Shows</h2>
+        <div class="dropdown d-flex align-items-center">
+            <button class="btn btn-secondary dropdown-toggle bg-black border-2 rounded-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Genres
+            </button>
+            <ul class="dropdown-menu bg-dark my2Nav">
+              <li><a class="dropdown-item text-white bg-transparent" href="#">THRILLER</a></li>
+              <li><a class="dropdown-item text-white bg-transparent" href="#">ROMANCE</a></li>
+              <li><a class="dropdown-item text-white bg-transparent" href="#">DRAMA</a></li>
+              <li><a class="dropdown-item text-white bg-transparent" href="#">MYSTERY</a></li>
+              <li><a class="dropdown-item text-white bg-transparent" href="#">COMEDY</a></li>
+              <li><a class="dropdown-item text-white bg-transparent" href="#">SPORTS</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex flex-row">
+            <a class="nav-link myNavIcon2 d-flex align-items-center" href="#"><ion-icon name="menu-outline"></ion-icon></a>
+            <a class="nav-link myNavIcon2 d-flex align-items-center" href="#"><ion-icon name="grid-outline"></ion-icon></a>
+        </div>
+    </div>
+
+    <!-- ! Main Content -->
+
+    <div class="container-fluid position-relative myButtonHoverArrow p-0 mt-1">
+
+        <i class="scrollLeft"><ion-icon name="chevron-back-outline"></ion-icon></i>
+        <i class="scrollRight"><ion-icon name="chevron-forward-outline"></ion-icon></i>
+        <h3 class="myTitle px-4">Trending Now</h3>
+        <div class="row scroll-horizontal p-4 ms-0">
+
+          <div class="col">
+            <div class="card">
+                <img class="card-img-top" src="assets/media/1.png" alt="Card image cap">
+                <div class="card-body">
+                  <div class="d-flex flex-column align-items-center justify-content-between">
+                    <h5 class="card-title fw-bold myHoverTitle text-uppercase">Unorthodox</h5>
+                    <span class="fw-bold">Category: <span class="text-info text-uppercase">Drama</span></span>
+                    <span class="fw-bold">User ratings: <span class="text-warning">8.7/10</span></span>
+                  <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+                </div>  
+                </div>
+            </div>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content bg-dark text-center text-white">
+                        <div class="modal-header border-0 m-0 p-0 mt-1">
+                            <h5 class="modal-title text-uppercase m-auto fw-bold text-white" id="exampleModalLabel">Unorthodox</h5>
+                        </div>
+                        <div class="modal-body pt-1">
+                            <img src="assets/media/1.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                            <p class="mt-4">Nineteen-year-old Esty is an ultra-Orthodox Chassidic girl who lives in Brooklyn and is compelled to follow the strict rules of her community. After a year of arranged marriage, she decides to escape to Berlin and start a new life.</p>
+                            <h6 class="fw-bold text-danger">Director: <span class="text-white">Maria Schrader</span></h6>
+                            <h6 class="fw-bold text-danger">Category: <span class="text-white">Drama</span></h6>
+                            <h6 class="fw-bold text-danger">User ratings: <span class="text-white">8.7/10</span></h6>
+                        </div>
+                        <div class="modal-footer border-0">
+                            <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                            <button type="button" class="btn btn-black text-white fw-bold myAddedBtn">Add to my list</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+              <img class="card-img-top" src="assets/media/2.png" alt="Card image cap">
+              <div class="card-body">
+                <div class="d-flex flex-column align-items-center justify-content-between">
+                  <h5 class="card-title fw-bold myHoverTitle text-uppercase">After Life</h5>
+                  <span class="fw-bold">Category: <span class="text-info text-uppercase">Drama</span></span>
+                  <span class="fw-bold">User ratings: <span class="text-warning">9/10</span></span>
+                <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal1"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+              </div>  
+              </div>
+          </div>
+          <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content bg-dark text-center text-white">
+                      <div class="modal-header border-0 m-0 p-0 mt-1">
+                          <h5 class="modal-title text-uppercase m-auto fw-bold text-white" id="exampleModalLabel">After Life</h5>
+                      </div>
+                      <div class="modal-body pt-1">
+                          <img src="assets/media/2.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                          <p class="mt-4">After Life is a dark comedy-drama series created by Ricky Gervais. It follows Tony, a grieving widower who contemplates suicide but decides to live long enough to punish the world by saying and doing whatever he wants. Through his journey, he learns the importance of kindness and human connections.</p>
+                          <h6 class="fw-bold text-danger">Director: <span class="text-white">Ricky Gervais</span></h6>
+                          <h6 class="fw-bold text-danger">Category: <span class="text-white">Drama</span></h6>
+                          <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9/10</span></h6>
+                      </div>
+                      <div class="modal-footer border-0">
+                          <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                          <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+            <img class="card-img-top" src="assets/media/3.png" alt="Card image cap">
+            <div class="card-body">
+              <div class="d-flex flex-column align-items-center justify-content-between">
+                <h5 class="card-title fw-bold myHoverTitle text-uppercase">VIS a VIS</h5>
+                <span class="fw-bold">Category: <span class="text-info text-uppercase">Thriller</span></span>
+                <span class="fw-bold">User ratings: <span class="text-warning">7.5/10</span></span>
+              <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal2"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+            </div>  
+            </div>
+        </div>
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-dark text-center text-white">
+                    <div class="modal-header border-0 m-0 p-0 mt-1">
+                        <h5 class="modal-title text-uppercase m-auto fw-bold text-white" id="exampleModalLabel">VIS a VIS</h5>
+                    </div>
+                    <div class="modal-body pt-1">
+                        <img src="assets/media/3.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                        <p class="mt-4">Vis a Vis is a Spanish thriller series that revolves around Macarena Ferreiro, a young woman who is imprisoned after being manipulated into committing financial fraud. Inside the high-security prison, she must navigate the dangerous dynamics, form alliances, and uncover dark secrets to survive.</p>
+                        <h6 class="fw-bold text-danger">Director: <span class="text-white">Iván Escobar, Álex Pina, Esther Martínez Lobato</span></h6>
+                        <h6 class="fw-bold text-danger">Category: <span class="text-white">Thriller</span></h6>
+                        <h6 class="fw-bold text-danger">User ratings: <span class="text-white">7.5/10</span></h6>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                        <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+          <img class="card-img-top" src="assets/media/4.png" alt="Card image cap">
+          <div class="card-body">
+            <div class="d-flex flex-column align-items-center justify-content-between">
+              <h5 class="card-title fw-bold myHoverTitle text-uppercase">The Place</h5>
+              <span class="fw-bold">Category: <span class="text-info text-uppercase">Mystery</span></span>
+              <span class="fw-bold">User ratings: <span class="text-warning">9.5/10</span></span>
+            <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal3"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+          </div>  
+          </div>
+      </div>
+      <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content bg-dark text-center text-white">
+                  <div class="modal-header border-0 m-0 p-0 mt-1">
+                      <h5 class="modal-title text-uppercase m-auto fw-bold text-white" id="exampleModalLabel">The Place</h5>
+                  </div>
+                  <div class="modal-body pt-1">
+                      <img src="assets/media/4.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                      <p class="mt-4">The Place is an Italian drama series based on the 2017 film of the same name. It explores the enigmatic story of a mysterious man who sits alone in a café, granting visitors' desires in exchange for completing mysterious tasks. Each episode delves into the moral dilemmas faced by the characters seeking his help.</p>
+                      <h6 class="fw-bold text-danger">Director: <span class="text-white">Paolo Genovese</span></h6>
+                      <h6 class="fw-bold text-danger">Category: <span class="text-white">Mystery</span></h6>
+                      <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9.5/10</span></h6>
+                  </div>
+                  <div class="modal-footer border-0">
+                      <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                      <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="col">
+    <div class="card">
+        <img class="card-img-top" src="assets/media/5.png" alt="Card image cap">
+        <div class="card-body">
+          <div class="d-flex flex-column align-items-center justify-content-between">
+            <h5 class="card-title fw-bold myHoverTitle text-uppercase">Summertime</h5>
+            <span class="fw-bold">Category: <span class="text-info text-uppercase">Romance</span></span>
+            <span class="fw-bold">User ratings: <span class="text-warning">7.7/10</span></span>
+          <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal4"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+        </div>  
+        </div>
+    </div>
+    <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content bg-dark text-center text-white">
+                <div class="modal-body pt-1">
+                    <img src="assets/media/5.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                    <p class="mt-4">Summertime is an Italian coming-of-age drama series set in the beautiful coastal town of Cesenatico. It follows a group of young adults from different backgrounds as they navigate love, friendship, and personal growth during the summer season. The series captures the joys, challenges, and transformative experiences that unfold during this pivotal time in their lives.</p>
+                    <h6 class="fw-bold text-danger">Director: <span class="text-white">Francesco Lagi, Lorenzo Sportiello</span></h6>
+                    <h6 class="fw-bold text-danger">Category: <span class="text-white">Romance</span></h6>
+                    <h6 class="fw-bold text-danger">User ratings: <span class="text-white">7.7/10</span></h6>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                    <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col">
+  <div class="card">
+      <img class="card-img-top" src="assets/media/6.png" alt="Card image cap">
+      <div class="card-body">
+        <div class="d-flex flex-column align-items-center justify-content-between">
+          <h5 class="card-title fw-bold myHoverTitle text-uppercase">Valhalla</h5>
+          <span class="fw-bold">Category: <span class="text-info text-uppercase">Thriller</span></span>
+          <span class="fw-bold">User ratings: <span class="text-warning">7.8/10</span></span>
+        <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal5"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+      </div>  
+      </div>
+  </div>
+  <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content bg-dark text-center text-white">
+              <div class="modal-body pt-1">
+                  <img src="assets/media/6.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                  <p class="mt-4">The Valhalla Murders is an Icelandic crime thriller series that follows a troubled detective named Arnar, who returns to his native Iceland to investigate a series of mysterious murders. Teaming up with a local police officer, Kata, they uncover a dark and twisted web of secrets in their pursuit of the truth.</p>
+                  <h6 class="fw-bold text-danger">Director: <span class="text-white">Thordur Palsson</span></h6>
+                  <h6 class="fw-bold text-danger">Category: <span class="text-white">Thriller</span></h6>
+                  <h6 class="fw-bold text-danger">User ratings: <span class="text-white">7.8/10</span></h6>
+              </div>
+              <div class="modal-footer border-0">
+                  <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                  <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card">
+      <img class="card-img-top" src="assets/media/7.png" alt="Card image cap">
+      <div class="card-body">
+        <div class="d-flex flex-column align-items-center justify-content-between">
+          <h5 class="card-title fw-bold myHoverTitle text-uppercase">Other Grace</h5>
+          <span class="fw-bold">Category: <span class="text-info text-uppercase">Mystery</span></span>
+          <span class="fw-bold">User ratings: <span class="text-warning">7.9/10</span></span>
+        <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal6"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+      </div>  
+      </div>
+  </div>
+  <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content bg-dark text-center text-white">
+              <div class="modal-body pt-1">
+                  <img src="assets/media/7.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                  <p class="mt-4">L'Altra Grace is an Italian psychological drama series centered around Grace, a woman who leads a seemingly perfect life. However, after a tragic event, she begins to question her own identity and sanity. The series explores themes of identity, memory, and the blurred lines between reality and imagination.</p>
+                  <h6 class="fw-bold text-danger">Director: <span class="text-white">Margaret Atwood</span></h6>
+                  <h6 class="fw-bold text-danger">Category: <span class="text-white">Mystery</span></h6>
+                  <h6 class="fw-bold text-danger">User ratings: <span class="text-white">7.9/10</span></h6>
+              </div>
+              <div class="modal-footer border-0">
+                  <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                  <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card">
+      <img class="card-img-top" src="assets/media/8.png" alt="Card image cap">
+      <div class="card-body">
+        <div class="d-flex flex-column align-items-center justify-content-between">
+          <h5 class="card-title fw-bold myHoverTitle text-uppercase">Virgin River</h5>
+          <span class="fw-bold">Category: <span class="text-info text-uppercase">Romance</span></span>
+          <span class="fw-bold">User ratings: <span class="text-warning">8.1/10</span></span>
+        <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal7"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+      </div>  
+      </div>
+  </div>
+  <div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content bg-dark text-center text-white">
+              <div class="modal-body pt-1">
+                  <img src="assets/media/8.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                  <p class="mt-4">Virgin River is a heartwarming drama series based on the novels by Robyn Carr. Melinda Monroe, a nurse practitioner, moves to the remote town of Virgin River for a fresh start. As she navigates her new life and forms connections with the residents, she discovers healing, love, and unexpected challenges along the way.
+                  </p>
+                  <h6 class="fw-bold text-danger">Director: <span class="text-white">Tim Matheson, Sue Tenney</span></h6>
+                  <h6 class="fw-bold text-danger">Category: <span class="text-white">Romance</span></h6>
+                  <h6 class="fw-bold text-danger">User ratings: <span class="text-white">8.1/10</span></h6>
+              </div>
+              <div class="modal-footer border-0">
+                  <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                  <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card">
+      <img class="card-img-top" src="assets/media/9.png" alt="Card image cap">
+      <div class="card-body">
+        <div class="d-flex flex-column align-items-center justify-content-between">
+          <h5 class="card-title fw-bold myHoverTitle text-uppercase">English Game</h5>
+          <span class="fw-bold">Category: <span class="text-info text-uppercase">Sports</span></span>
+          <span class="fw-bold">User ratings: <span class="text-warning">9.1/10</span></span>
+        <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal8"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+      </div>  
+      </div>
+  </div>
+  <div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content bg-dark text-center text-white">
+              <div class="modal-body pt-1">
+                  <img src="assets/media/9.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                  <p class="mt-4">The English Game is a historical drama series set in the late 19th century. It explores the origins of modern football and the social dynamics surrounding the sport's early development. The series focuses on the clash between working-class players and the privileged elite, highlighting the transformative power of the game and its impact on society.
+                  </p>
+                  <h6 class="fw-bold text-danger">Director: <span class="text-white">Julian Fellowes</span></h6>
+                  <h6 class="fw-bold text-danger">Category: <span class="text-white">Sports</span></h6>
+                  <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9.1/10</span></h6>
+              </div>
+              <div class="modal-footer border-0">
+                  <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                  <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card">
+      <img class="card-img-top" src="assets/media/10.png" alt="Card image cap">
+      <div class="card-body">
+        <div class="d-flex flex-column align-items-center justify-content-between">
+          <h5 class="card-title fw-bold myHoverTitle text-uppercase">Kominsky</h5>
+          <span class="fw-bold">Category: <span class="text-info text-uppercase">Comedy</span></span>
+          <span class="fw-bold">User ratings: <span class="text-warning">7.7/10</span></span>
+        <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal9"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+      </div>  
+      </div>
+  </div>
+  <div class="modal fade" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content bg-dark text-center text-white">
+              <div class="modal-body pt-1">
+                  <img src="assets/media/10.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                  <p class="mt-4">Il Metodo Kominsky is a comedy-drama series created by Chuck Lorre. It follows the story of Sandy Kominsky, an aging acting coach, and his best friend Norman Newlander as they navigate the ups and downs of life, career, and relationships in the later stages of their lives. The series explores themes of friendship, mortality, and the pursuit of happiness.
+                  </p>
+                  <h6 class="fw-bold text-danger">Director: <span class="text-white">Chuck Lorre</span></h6>
+                  <h6 class="fw-bold text-danger">Category: <span class="text-white">Comedy</span></h6>
+                  <h6 class="fw-bold text-danger">User ratings: <span class="text-white">7.7/10</span></h6>
+              </div>
+              <div class="modal-footer border-0">
+                  <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                  <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card">
+      <img class="card-img-top" src="assets/media/11.png" alt="Card image cap">
+      <div class="card-body">
+        <div class="d-flex flex-column align-items-center justify-content-between">
+          <h5 class="card-title fw-bold myHoverTitle text-uppercase">Love Pact</h5>
+          <span class="fw-bold">Category: <span class="text-info text-uppercase">Romantic</span></span>
+          <span class="fw-bold">User ratings: <span class="text-warning">9.5/10</span></span>
+        <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal10"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+      </div>  
+      </div>
+  </div>
+  <div class="modal fade" id="myModal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content bg-dark text-center text-white">
+              <div class="modal-body pt-1">
+                  <img src="assets/media/11.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                  <p class="mt-4">Love Pact is a romantic drama series that revolves around the intertwined lives of two individuals who make a pact to enter into a contractual relationship for personal gain. As their relationship evolves, they discover the complexities of love and the power of genuine connections, challenging the boundaries of their initial agreement.
+                  </p>
+                  <h6 class="fw-bold text-danger">Director: <span class="text-white">Anya Adams</span></h6>
+                  <h6 class="fw-bold text-danger">Category: <span class="text-white">Romantic</span></h6>
+                  <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9.5/10</span></h6>
+              </div>
+              <div class="modal-footer border-0">
+                  <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                  <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card">
+      <img class="card-img-top" src="assets/media/12.png" alt="Card image cap">
+      <div class="card-body">
+        <div class="d-flex flex-column align-items-center justify-content-between">
+          <h5 class="card-title fw-bold myHoverTitle text-uppercase">Las Flores</h5>
+          <span class="fw-bold">Category: <span class="text-info text-uppercase">Comedy</span></span>
+          <span class="fw-bold">User ratings: <span class="text-warning">7.3/10</span></span>
+        <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal11"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+      </div>  
+      </div>
+  </div>
+  <div class="modal fade" id="myModal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content bg-dark text-center text-white">
+              <div class="modal-body pt-1">
+                  <img src="assets/media/12.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                  <p class="mt-4">La Casa de las Flores is a Mexican dark comedy-drama series that follows the dysfunctional de la Mora family, owners of a successful flower shop. Secrets, scandals, and unexpected events unfold as they navigate through family dynamics, love affairs, and the unveiling of long-held secrets within the walls of their iconic house.
+                  </p>
+                  <h6 class="fw-bold text-danger">Director: <span class="text-white">Manolo Caro</span></h6>
+                  <h6 class="fw-bold text-danger">Category: <span class="text-white">Comedy</span></h6>
+                  <h6 class="fw-bold text-danger">User ratings: <span class="text-white">7.3/10</span></h6>
+              </div>
+              <div class="modal-footer border-0">
+                  <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                  <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="col">
+    <div class="card">
+        <img class="card-img-top" src="assets/media/14.png" alt="Card image cap">
+        <div class="card-body">
+          <div class="d-flex flex-column align-items-center justify-content-between">
+            <h5 class="card-title fw-bold myHoverTitle text-uppercase">Self-Made</h5>
+            <span class="fw-bold">Category: <span class="text-info text-uppercase">Drama</span></span>
+            <span class="fw-bold">User ratings: <span class="text-warning">8.7/10</span></span>
+          <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal30"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+        </div>  
+        </div>
+    </div>
+    <div class="modal fade" id="myModal30" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content bg-dark text-center text-white">
+                <div class="modal-header border-0 m-0 p-0 mt-1">
+                    <h5 class="modal-title text-uppercase m-auto fw-bold text-white" id="exampleModalLabel">Unorthodox</h5>
+                </div>
+                <div class="modal-body pt-1">
+                    <img src="assets/media/14.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                    <p class="mt-4">
+                        The incredible story of Madam C.J. Walker, the first African-American woman to become a millionaire. A woman who built her success relying solely on her own strength.</p>
+                    <h6 class="fw-bold text-danger">Director: <span class="text-white">Kasi Lemmons</span></h6>
+                    <h6 class="fw-bold text-danger">Category: <span class="text-white">Drama</span></h6>
+                    <h6 class="fw-bold text-danger">User ratings: <span class="text-white">8.7/10</span></h6>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                    <button type="button" class="btn btn-black text-white fw-bold myAddedBtn">Add to my list</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col">
+  <div class="card">
+      <img class="card-img-top" src="assets/media/13.png" alt="Card image cap">
+      <div class="card-body">
+        <div class="d-flex flex-column align-items-center justify-content-between">
+          <h5 class="card-title fw-bold myHoverTitle text-uppercase">Beauty</h5>
+          <span class="fw-bold">Category: <span class="text-info text-uppercase">Romance</span></span>
+          <span class="fw-bold">User ratings: <span class="text-warning">7.4/10</span></span>
+        <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal12"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+      </div>  
+      </div>
+  </div>
+  <div class="modal fade" id="myModal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content bg-dark text-center text-white">
+              <div class="modal-body pt-1">
+                  <img src="assets/media/13.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                  <p class="mt-4">Collateral Beauty is a poignant drama film that follows the story of a successful advertising executive named Howard, who is deeply grieving the loss of his daughter. In an attempt to cope with his pain, he begins writing letters to Love, Time, and Death. Unexpected encounters with three mysterious individuals force him to confront the meaning of life, love, and healing.
+                  </p>
+                  <h6 class="fw-bold text-danger">Director: <span class="text-white">David Frankel</span></h6>
+                  <h6 class="fw-bold text-danger">Category: <span class="text-white">Romance</span></h6>
+                  <h6 class="fw-bold text-danger">User ratings: <span class="text-white">7.4/10</span></h6>
+              </div>
+              <div class="modal-footer border-0">
+                  <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                  <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card">
+      <img class="card-img-top" src="assets/media/15.png" alt="Card image cap">
+      <div class="card-body">
+        <div class="d-flex flex-column align-items-center justify-content-between">
+          <h5 class="card-title fw-bold myHoverTitle text-uppercase">Freud</h5>
+          <span class="fw-bold">Category: <span class="text-info text-uppercase">Crime</span></span>
+          <span class="fw-bold">User ratings: <span class="text-warning">9.9/10</span></span>
+        <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal14"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+      </div>  
+      </div>
+  </div>
+  <div class="modal fade" id="myModal14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content bg-dark text-center text-white">
+              <div class="modal-body pt-1">
+                  <img src="assets/media/15.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                  <p class="mt-4">Freud is a historical crime thriller series that reimagines the early years of renowned psychoanalyst Sigmund Freud. Set in 19th-century Vienna, Freud finds himself entangled in a dark mystery involving a serial killer. Blending elements of psychology and the occult, he uses his groundbreaking theories to solve the chilling crimes while confronting his own demons.</p>
+                  <h6 class="fw-bold text-danger">Director: <span class="text-white">Marvin Kren</span></h6>
+                  <h6 class="fw-bold text-danger">Category: <span class="text-white">Crime</span></h6>
+                  <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9.9/10</span></h6>
+              </div>
+              <div class="modal-footer border-0">
+                  <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                  <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card">
+      <img class="card-img-top" src="assets/media/16.png" alt="Card image cap">
+      <div class="card-body">
+        <div class="d-flex flex-column align-items-center justify-content-between">
+          <h5 class="card-title fw-bold myHoverTitle text-uppercase">Grace</h5>
+          <span class="fw-bold">Category: <span class="text-info text-uppercase">Comedy</span></span>
+          <span class="fw-bold">User ratings: <span class="text-warning">9.5/10</span></span>
+        <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal15"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+      </div>  
+      </div>
+  </div>
+  <div class="modal fade" id="myModal15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content bg-dark text-center text-white">
+              <div class="modal-body pt-1">
+                  <img src="assets/media/16.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                  <p class="mt-4">Grace and Frankie is a comedy-drama series that follows the lives of two women, Grace and Frankie, who find themselves unexpectedly thrown together when their husbands announce they are in love with each other and plan to get married. As they navigate this new chapter, Grace and Frankie form an unlikely friendship and discover new adventures and self-discovery in their golden years.</p>
+                  <h6 class="fw-bold text-danger">Director: <span class="text-white">Marta Kauffman, Howard J. Morris</span></h6>
+                  <h6 class="fw-bold text-danger">Category: <span class="text-white">Comedy</span></h6>
+                  <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9.5/10</span></h6>
+              </div>
+              <div class="modal-footer border-0">
+                  <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                  <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card">
+      <img class="card-img-top" src="assets/media/17.png" alt="Card image cap">
+      <div class="card-body">
+        <div class="d-flex flex-column align-items-center justify-content-between">
+          <h5 class="card-title fw-bold myHoverTitle text-uppercase">Let Yourself Go</h5>
+          <span class="fw-bold">Category: <span class="text-info text-uppercase">Comedy</span></span>
+          <span class="fw-bold">User ratings: <span class="text-warning">9.6/10</span></span>
+        <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal16"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+      </div>  
+      </div>
+  </div>
+  <div class="modal fade" id="myModal16" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content bg-dark text-center text-white">
+              <div class="modal-body pt-1">
+                  <img src="assets/media/17.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                  <p class="mt-4">Let Yourself Go is an Italian comedy film that tells the story of Elia, a psychoanalyst who leads a sedentary lifestyle. When his doctor advises him to start exercising, he reluctantly hires Claudia, a young personal trainer. Through their unlikely bond, Elia begins to let go of his inhibitions and embraces a newfound zest for life.</p>
+                  <h6 class="fw-bold text-danger">Director: <span class="text-white">Francesco Amato</span></h6>
+                  <h6 class="fw-bold text-danger">Category: <span class="text-white">Comedy</span></h6>
+                  <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9.6/10</span></h6>
+              </div>
+              <div class="modal-footer border-0">
+                  <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                  <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card">
+      <img class="card-img-top" src="assets/media/18.png" alt="Card image cap">
+      <div class="card-body">
+        <div class="d-flex flex-column align-items-center justify-content-between">
+          <h5 class="card-title fw-bold myHoverTitle text-uppercase">Dogman</h5>
+          <span class="fw-bold">Category: <span class="text-info text-uppercase">Comedy</span></span>
+          <span class="fw-bold">User ratings: <span class="text-warning">9.1/10</span></span>
+        <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal17"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+      </div>  
+      </div>
+  </div>
+  <div class="modal fade" id="myModal17" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content bg-dark text-center text-white">
+              <div class="modal-body pt-1">
+                  <img src="assets/media/18.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                  <p class="mt-4">Dogman is an Italian crime drama film inspired by true events. The story revolves around Marcello, a mild-mannered dog groomer who becomes involved with Simone, a violent and unpredictable ex-boxer. Marcello's loyalty and desire for acceptance lead him down a dangerous path as he becomes entangled in Simone's criminal activities.</p>
+                  <h6 class="fw-bold text-danger">Director: <span class="text-white">Matteo Garrone</span></h6>
+                  <h6 class="fw-bold text-danger">Category: <span class="text-white">Comedy</span></h6>
+                  <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9.1/10</span></h6>
+              </div>
+              <div class="modal-footer border-0">
+                  <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                  <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </div>
+
+        <div class="container-fluid position-relative myButtonHoverArrow p-0">
+
+            <i class="scrollLeft"><ion-icon name="chevron-back-outline"></ion-icon></i>
+            <i class="scrollRight"><ion-icon name="chevron-forward-outline"></ion-icon></i>
+            <h3 class="myTitle px-4">Watch It Again</h3>
+            <div class="row scroll-horizontal p-4 ms-0">
+    
+
+    
+    <div class="col">
+      <div class="card">
+          <img class="card-img-top" src="assets/media/10.png" alt="Card image cap">
+          <div class="card-body">
+            <div class="d-flex flex-column align-items-center justify-content-between">
+              <h5 class="card-title fw-bold myHoverTitle text-uppercase">Kominsky</h5>
+              <span class="fw-bold">Category: <span class="text-info text-uppercase">Comedy</span></span>
+              <span class="fw-bold">User ratings: <span class="text-warning">7.7/10</span></span>
+            <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal9"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+          </div>  
+          </div>
+      </div>
+      <div class="modal fade" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content bg-dark text-center text-white">
+                  <div class="modal-body pt-1">
+                      <img src="assets/media/10.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                      <p class="mt-4">Il Metodo Kominsky is a comedy-drama series created by Chuck Lorre. It follows the story of Sandy Kominsky, an aging acting coach, and his best friend Norman Newlander as they navigate the ups and downs of life, career, and relationships in the later stages of their lives. The series explores themes of friendship, mortality, and the pursuit of happiness.
+                      </p>
+                      <h6 class="fw-bold text-danger">Director: <span class="text-white">Chuck Lorre</span></h6>
+                      <h6 class="fw-bold text-danger">Category: <span class="text-white">Comedy</span></h6>
+                      <h6 class="fw-bold text-danger">User ratings: <span class="text-white">7.7/10</span></h6>
+                  </div>
+                  <div class="modal-footer border-0">
+                      <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                      <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card">
+          <img class="card-img-top" src="assets/media/11.png" alt="Card image cap">
+          <div class="card-body">
+            <div class="d-flex flex-column align-items-center justify-content-between">
+              <h5 class="card-title fw-bold myHoverTitle text-uppercase">Love Pact</h5>
+              <span class="fw-bold">Category: <span class="text-info text-uppercase">Romantic</span></span>
+              <span class="fw-bold">User ratings: <span class="text-warning">9.5/10</span></span>
+            <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal10"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+          </div>  
+          </div>
+      </div>
+      <div class="modal fade" id="myModal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content bg-dark text-center text-white">
+                  <div class="modal-body pt-1">
+                      <img src="assets/media/11.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                      <p class="mt-4">Love Pact is a romantic drama series that revolves around the intertwined lives of two individuals who make a pact to enter into a contractual relationship for personal gain. As their relationship evolves, they discover the complexities of love and the power of genuine connections, challenging the boundaries of their initial agreement.
+                      </p>
+                      <h6 class="fw-bold text-danger">Director: <span class="text-white">Anya Adams</span></h6>
+                      <h6 class="fw-bold text-danger">Category: <span class="text-white">Romantic</span></h6>
+                      <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9.5/10</span></h6>
+                  </div>
+                  <div class="modal-footer border-0">
+                      <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                      <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card">
+          <img class="card-img-top" src="assets/media/12.png" alt="Card image cap">
+          <div class="card-body">
+            <div class="d-flex flex-column align-items-center justify-content-between">
+              <h5 class="card-title fw-bold myHoverTitle text-uppercase">Las Flores</h5>
+              <span class="fw-bold">Category: <span class="text-info text-uppercase">Comedy</span></span>
+              <span class="fw-bold">User ratings: <span class="text-warning">7.3/10</span></span>
+            <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal11"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+          </div>  
+          </div>
+      </div>
+      <div class="modal fade" id="myModal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content bg-dark text-center text-white">
+                  <div class="modal-body pt-1">
+                      <img src="assets/media/12.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                      <p class="mt-4">La Casa de las Flores is a Mexican dark comedy-drama series that follows the dysfunctional de la Mora family, owners of a successful flower shop. Secrets, scandals, and unexpected events unfold as they navigate through family dynamics, love affairs, and the unveiling of long-held secrets within the walls of their iconic house.
+                      </p>
+                      <h6 class="fw-bold text-danger">Director: <span class="text-white">Manolo Caro</span></h6>
+                      <h6 class="fw-bold text-danger">Category: <span class="text-white">Comedy</span></h6>
+                      <h6 class="fw-bold text-danger">User ratings: <span class="text-white">7.3/10</span></h6>
+                  </div>
+                  <div class="modal-footer border-0">
+                      <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                      <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card">
+          <img class="card-img-top" src="assets/media/13.png" alt="Card image cap">
+          <div class="card-body">
+            <div class="d-flex flex-column align-items-center justify-content-between">
+              <h5 class="card-title fw-bold myHoverTitle text-uppercase">Beauty</h5>
+              <span class="fw-bold">Category: <span class="text-info text-uppercase">Romance</span></span>
+              <span class="fw-bold">User ratings: <span class="text-warning">7.4/10</span></span>
+            <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal12"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+          </div>  
+          </div>
+      </div>
+      <div class="modal fade" id="myModal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content bg-dark text-center text-white">
+                  <div class="modal-body pt-1">
+                      <img src="assets/media/13.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                      <p class="mt-4">Collateral Beauty is a poignant drama film that follows the story of a successful advertising executive named Howard, who is deeply grieving the loss of his daughter. In an attempt to cope with his pain, he begins writing letters to Love, Time, and Death. Unexpected encounters with three mysterious individuals force him to confront the meaning of life, love, and healing.
+                      </p>
+                      <h6 class="fw-bold text-danger">Director: <span class="text-white">David Frankel</span></h6>
+                      <h6 class="fw-bold text-danger">Category: <span class="text-white">Romance</span></h6>
+                      <h6 class="fw-bold text-danger">User ratings: <span class="text-white">7.4/10</span></h6>
+                  </div>
+                  <div class="modal-footer border-0">
+                      <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                      <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="col">
+        <div class="card">
+            <img class="card-img-top" src="assets/media/14.png" alt="Card image cap">
+            <div class="card-body">
+              <div class="d-flex flex-column align-items-center justify-content-between">
+                <h5 class="card-title fw-bold myHoverTitle text-uppercase">Self-Made</h5>
+                <span class="fw-bold">Category: <span class="text-info text-uppercase">Drama</span></span>
+                <span class="fw-bold">User ratings: <span class="text-warning">8.7/10</span></span>
+              <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal30"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+            </div>  
+            </div>
+        </div>
+        <div class="modal fade" id="myModal30" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-dark text-center text-white">
+                    <div class="modal-header border-0 m-0 p-0 mt-1">
+                        <h5 class="modal-title text-uppercase m-auto fw-bold text-white" id="exampleModalLabel">Unorthodox</h5>
+                    </div>
+                    <div class="modal-body pt-1">
+                        <img src="assets/media/14.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                        <p class="mt-4">
+                            The incredible story of Madam C.J. Walker, the first African-American woman to become a millionaire. A woman who built her success relying solely on her own strength.</p>
+                        <h6 class="fw-bold text-danger">Director: <span class="text-white">Kasi Lemmons</span></h6>
+                        <h6 class="fw-bold text-danger">Category: <span class="text-white">Drama</span></h6>
+                        <h6 class="fw-bold text-danger">User ratings: <span class="text-white">8.7/10</span></h6>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                        <button type="button" class="btn btn-black text-white fw-bold myAddedBtn">Add to my list</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col">
+      <div class="card">
+          <img class="card-img-top" src="assets/media/15.png" alt="Card image cap">
+          <div class="card-body">
+            <div class="d-flex flex-column align-items-center justify-content-between">
+              <h5 class="card-title fw-bold myHoverTitle text-uppercase">Freud</h5>
+              <span class="fw-bold">Category: <span class="text-info text-uppercase">Crime</span></span>
+              <span class="fw-bold">User ratings: <span class="text-warning">9.9/10</span></span>
+            <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal14"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+          </div>  
+          </div>
+      </div>
+      <div class="modal fade" id="myModal14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content bg-dark text-center text-white">
+                  <div class="modal-body pt-1">
+                      <img src="assets/media/15.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                      <p class="mt-4">Freud is a historical crime thriller series that reimagines the early years of renowned psychoanalyst Sigmund Freud. Set in 19th-century Vienna, Freud finds himself entangled in a dark mystery involving a serial killer. Blending elements of psychology and the occult, he uses his groundbreaking theories to solve the chilling crimes while confronting his own demons.</p>
+                      <h6 class="fw-bold text-danger">Director: <span class="text-white">Marvin Kren</span></h6>
+                      <h6 class="fw-bold text-danger">Category: <span class="text-white">Crime</span></h6>
+                      <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9.9/10</span></h6>
+                  </div>
+                  <div class="modal-footer border-0">
+                      <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                      <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card">
+          <img class="card-img-top" src="assets/media/16.png" alt="Card image cap">
+          <div class="card-body">
+            <div class="d-flex flex-column align-items-center justify-content-between">
+              <h5 class="card-title fw-bold myHoverTitle text-uppercase">Grace</h5>
+              <span class="fw-bold">Category: <span class="text-info text-uppercase">Comedy</span></span>
+              <span class="fw-bold">User ratings: <span class="text-warning">9.5/10</span></span>
+            <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal15"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+          </div>  
+          </div>
+      </div>
+      <div class="modal fade" id="myModal15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content bg-dark text-center text-white">
+                  <div class="modal-body pt-1">
+                      <img src="assets/media/16.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                      <p class="mt-4">Grace and Frankie is a comedy-drama series that follows the lives of two women, Grace and Frankie, who find themselves unexpectedly thrown together when their husbands announce they are in love with each other and plan to get married. As they navigate this new chapter, Grace and Frankie form an unlikely friendship and discover new adventures and self-discovery in their golden years.</p>
+                      <h6 class="fw-bold text-danger">Director: <span class="text-white">Marta Kauffman, Howard J. Morris</span></h6>
+                      <h6 class="fw-bold text-danger">Category: <span class="text-white">Comedy</span></h6>
+                      <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9.5/10</span></h6>
+                  </div>
+                  <div class="modal-footer border-0">
+                      <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                      <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card">
+          <img class="card-img-top" src="assets/media/17.png" alt="Card image cap">
+          <div class="card-body">
+            <div class="d-flex flex-column align-items-center justify-content-between">
+              <h5 class="card-title fw-bold myHoverTitle text-uppercase">Let Yourself Go</h5>
+              <span class="fw-bold">Category: <span class="text-info text-uppercase">Comedy</span></span>
+              <span class="fw-bold">User ratings: <span class="text-warning">9.6/10</span></span>
+            <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal16"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+          </div>  
+          </div>
+      </div>
+      <div class="modal fade" id="myModal16" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content bg-dark text-center text-white">
+                  <div class="modal-body pt-1">
+                      <img src="assets/media/17.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                      <p class="mt-4">Let Yourself Go is an Italian comedy film that tells the story of Elia, a psychoanalyst who leads a sedentary lifestyle. When his doctor advises him to start exercising, he reluctantly hires Claudia, a young personal trainer. Through their unlikely bond, Elia begins to let go of his inhibitions and embraces a newfound zest for life.</p>
+                      <h6 class="fw-bold text-danger">Director: <span class="text-white">Francesco Amato</span></h6>
+                      <h6 class="fw-bold text-danger">Category: <span class="text-white">Comedy</span></h6>
+                      <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9.6/10</span></h6>
+                  </div>
+                  <div class="modal-footer border-0">
+                      <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                      <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="col">
+        <div class="card">
+            <img class="card-img-top" src="assets/media/1.png" alt="Card image cap">
+            <div class="card-body">
+              <div class="d-flex flex-column align-items-center justify-content-between">
+                <h5 class="card-title fw-bold myHoverTitle text-uppercase">Unorthodox</h5>
+                <span class="fw-bold">Category: <span class="text-info text-uppercase">Drama</span></span>
+                <span class="fw-bold">User ratings: <span class="text-warning">8.7/10</span></span>
+              <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+            </div>  
+            </div>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-dark text-center text-white">
+                    <div class="modal-header border-0 m-0 p-0 mt-1">
+                        <h5 class="modal-title text-uppercase m-auto fw-bold text-white" id="exampleModalLabel">Unorthodox</h5>
+                    </div>
+                    <div class="modal-body pt-1">
+                        <img src="assets/media/1.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                        <p class="mt-4">Nineteen-year-old Esty is an ultra-Orthodox Chassidic girl who lives in Brooklyn and is compelled to follow the strict rules of her community. After a year of arranged marriage, she decides to escape to Berlin and start a new life.</p>
+                        <h6 class="fw-bold text-danger">Director: <span class="text-white">Maria Schrader</span></h6>
+                        <h6 class="fw-bold text-danger">Category: <span class="text-white">Drama</span></h6>
+                        <h6 class="fw-bold text-danger">User ratings: <span class="text-white">8.7/10</span></h6>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                        <button type="button" class="btn btn-black text-white fw-bold myAddedBtn">Add to my list</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+          <img class="card-img-top" src="assets/media/2.png" alt="Card image cap">
+          <div class="card-body">
+            <div class="d-flex flex-column align-items-center justify-content-between">
+              <h5 class="card-title fw-bold myHoverTitle text-uppercase">After Life</h5>
+              <span class="fw-bold">Category: <span class="text-info text-uppercase">Drama</span></span>
+              <span class="fw-bold">User ratings: <span class="text-warning">9/10</span></span>
+            <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal1"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+          </div>  
+          </div>
+      </div>
+      <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content bg-dark text-center text-white">
+                  <div class="modal-header border-0 m-0 p-0 mt-1">
+                      <h5 class="modal-title text-uppercase m-auto fw-bold text-white" id="exampleModalLabel">After Life</h5>
+                  </div>
+                  <div class="modal-body pt-1">
+                      <img src="assets/media/2.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                      <p class="mt-4">After Life is a dark comedy-drama series created by Ricky Gervais. It follows Tony, a grieving widower who contemplates suicide but decides to live long enough to punish the world by saying and doing whatever he wants. Through his journey, he learns the importance of kindness and human connections.</p>
+                      <h6 class="fw-bold text-danger">Director: <span class="text-white">Ricky Gervais</span></h6>
+                      <h6 class="fw-bold text-danger">Category: <span class="text-white">Drama</span></h6>
+                      <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9/10</span></h6>
+                  </div>
+                  <div class="modal-footer border-0">
+                      <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                      <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="col">
+    <div class="card">
+        <img class="card-img-top" src="assets/media/3.png" alt="Card image cap">
+        <div class="card-body">
+          <div class="d-flex flex-column align-items-center justify-content-between">
+            <h5 class="card-title fw-bold myHoverTitle text-uppercase">VIS a VIS</h5>
+            <span class="fw-bold">Category: <span class="text-info text-uppercase">Thriller</span></span>
+            <span class="fw-bold">User ratings: <span class="text-warning">7.5/10</span></span>
+          <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal2"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+        </div>  
+        </div>
+    </div>
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content bg-dark text-center text-white">
+                <div class="modal-header border-0 m-0 p-0 mt-1">
+                    <h5 class="modal-title text-uppercase m-auto fw-bold text-white" id="exampleModalLabel">VIS a VIS</h5>
+                </div>
+                <div class="modal-body pt-1">
+                    <img src="assets/media/3.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                    <p class="mt-4">Vis a Vis is a Spanish thriller series that revolves around Macarena Ferreiro, a young woman who is imprisoned after being manipulated into committing financial fraud. Inside the high-security prison, she must navigate the dangerous dynamics, form alliances, and uncover dark secrets to survive.</p>
+                    <h6 class="fw-bold text-danger">Director: <span class="text-white">Iván Escobar, Álex Pina, Esther Martínez Lobato</span></h6>
+                    <h6 class="fw-bold text-danger">Category: <span class="text-white">Thriller</span></h6>
+                    <h6 class="fw-bold text-danger">User ratings: <span class="text-white">7.5/10</span></h6>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                    <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col">
+  <div class="card">
+      <img class="card-img-top" src="assets/media/4.png" alt="Card image cap">
+      <div class="card-body">
+        <div class="d-flex flex-column align-items-center justify-content-between">
+          <h5 class="card-title fw-bold myHoverTitle text-uppercase">The Place</h5>
+          <span class="fw-bold">Category: <span class="text-info text-uppercase">Mystery</span></span>
+          <span class="fw-bold">User ratings: <span class="text-warning">9.5/10</span></span>
+        <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal3"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+      </div>  
+      </div>
+  </div>
+  <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content bg-dark text-center text-white">
+              <div class="modal-header border-0 m-0 p-0 mt-1">
+                  <h5 class="modal-title text-uppercase m-auto fw-bold text-white" id="exampleModalLabel">The Place</h5>
+              </div>
+              <div class="modal-body pt-1">
+                  <img src="assets/media/4.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                  <p class="mt-4">The Place is an Italian drama series based on the 2017 film of the same name. It explores the enigmatic story of a mysterious man who sits alone in a café, granting visitors' desires in exchange for completing mysterious tasks. Each episode delves into the moral dilemmas faced by the characters seeking his help.</p>
+                  <h6 class="fw-bold text-danger">Director: <span class="text-white">Paolo Genovese</span></h6>
+                  <h6 class="fw-bold text-danger">Category: <span class="text-white">Mystery</span></h6>
+                  <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9.5/10</span></h6>
+              </div>
+              <div class="modal-footer border-0">
+                  <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                  <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="col">
+<div class="card">
+    <img class="card-img-top" src="assets/media/5.png" alt="Card image cap">
+    <div class="card-body">
+      <div class="d-flex flex-column align-items-center justify-content-between">
+        <h5 class="card-title fw-bold myHoverTitle text-uppercase">Summertime</h5>
+        <span class="fw-bold">Category: <span class="text-info text-uppercase">Romance</span></span>
+        <span class="fw-bold">User ratings: <span class="text-warning">7.7/10</span></span>
+      <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal4"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+    </div>  
+    </div>
+</div>
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-dark text-center text-white">
+            <div class="modal-body pt-1">
+                <img src="assets/media/5.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                <p class="mt-4">Summertime is an Italian coming-of-age drama series set in the beautiful coastal town of Cesenatico. It follows a group of young adults from different backgrounds as they navigate love, friendship, and personal growth during the summer season. The series captures the joys, challenges, and transformative experiences that unfold during this pivotal time in their lives.</p>
+                <h6 class="fw-bold text-danger">Director: <span class="text-white">Francesco Lagi, Lorenzo Sportiello</span></h6>
+                <h6 class="fw-bold text-danger">Category: <span class="text-white">Romance</span></h6>
+                <h6 class="fw-bold text-danger">User ratings: <span class="text-white">7.7/10</span></h6>
+            </div>
+            <div class="modal-footer border-0">
+                <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="col">
+<div class="card">
+  <img class="card-img-top" src="assets/media/6.png" alt="Card image cap">
+  <div class="card-body">
+    <div class="d-flex flex-column align-items-center justify-content-between">
+      <h5 class="card-title fw-bold myHoverTitle text-uppercase">Valhalla</h5>
+      <span class="fw-bold">Category: <span class="text-info text-uppercase">Thriller</span></span>
+      <span class="fw-bold">User ratings: <span class="text-warning">7.8/10</span></span>
+    <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal5"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+  </div>  
+  </div>
+</div>
+<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content bg-dark text-center text-white">
+          <div class="modal-body pt-1">
+              <img src="assets/media/6.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+              <p class="mt-4">The Valhalla Murders is an Icelandic crime thriller series that follows a troubled detective named Arnar, who returns to his native Iceland to investigate a series of mysterious murders. Teaming up with a local police officer, Kata, they uncover a dark and twisted web of secrets in their pursuit of the truth.</p>
+              <h6 class="fw-bold text-danger">Director: <span class="text-white">Thordur Palsson</span></h6>
+              <h6 class="fw-bold text-danger">Category: <span class="text-white">Thriller</span></h6>
+              <h6 class="fw-bold text-danger">User ratings: <span class="text-white">7.8/10</span></h6>
+          </div>
+          <div class="modal-footer border-0">
+              <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+              <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+<div class="col">
+<div class="card">
+  <img class="card-img-top" src="assets/media/7.png" alt="Card image cap">
+  <div class="card-body">
+    <div class="d-flex flex-column align-items-center justify-content-between">
+      <h5 class="card-title fw-bold myHoverTitle text-uppercase">Other Grace</h5>
+      <span class="fw-bold">Category: <span class="text-info text-uppercase">Mystery</span></span>
+      <span class="fw-bold">User ratings: <span class="text-warning">7.9/10</span></span>
+    <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal6"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+  </div>  
+  </div>
+</div>
+<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content bg-dark text-center text-white">
+          <div class="modal-body pt-1">
+              <img src="assets/media/7.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+              <p class="mt-4">L'Altra Grace is an Italian psychological drama series centered around Grace, a woman who leads a seemingly perfect life. However, after a tragic event, she begins to question her own identity and sanity. The series explores themes of identity, memory, and the blurred lines between reality and imagination.</p>
+              <h6 class="fw-bold text-danger">Director: <span class="text-white">Margaret Atwood</span></h6>
+              <h6 class="fw-bold text-danger">Category: <span class="text-white">Mystery</span></h6>
+              <h6 class="fw-bold text-danger">User ratings: <span class="text-white">7.9/10</span></h6>
+          </div>
+          <div class="modal-footer border-0">
+              <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+              <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+<div class="col">
+<div class="card">
+  <img class="card-img-top" src="assets/media/8.png" alt="Card image cap">
+  <div class="card-body">
+    <div class="d-flex flex-column align-items-center justify-content-between">
+      <h5 class="card-title fw-bold myHoverTitle text-uppercase">Virgin River</h5>
+      <span class="fw-bold">Category: <span class="text-info text-uppercase">Romance</span></span>
+      <span class="fw-bold">User ratings: <span class="text-warning">8.1/10</span></span>
+    <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal7"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+  </div>  
+  </div>
+</div>
+<div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content bg-dark text-center text-white">
+          <div class="modal-body pt-1">
+              <img src="assets/media/8.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+              <p class="mt-4">Virgin River is a heartwarming drama series based on the novels by Robyn Carr. Melinda Monroe, a nurse practitioner, moves to the remote town of Virgin River for a fresh start. As she navigates her new life and forms connections with the residents, she discovers healing, love, and unexpected challenges along the way.
+              </p>
+              <h6 class="fw-bold text-danger">Director: <span class="text-white">Tim Matheson, Sue Tenney</span></h6>
+              <h6 class="fw-bold text-danger">Category: <span class="text-white">Romance</span></h6>
+              <h6 class="fw-bold text-danger">User ratings: <span class="text-white">8.1/10</span></h6>
+          </div>
+          <div class="modal-footer border-0">
+              <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+              <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+<div class="col">
+<div class="card">
+  <img class="card-img-top" src="assets/media/9.png" alt="Card image cap">
+  <div class="card-body">
+    <div class="d-flex flex-column align-items-center justify-content-between">
+      <h5 class="card-title fw-bold myHoverTitle text-uppercase">English Game</h5>
+      <span class="fw-bold">Category: <span class="text-info text-uppercase">Sports</span></span>
+      <span class="fw-bold">User ratings: <span class="text-warning">9.1/10</span></span>
+    <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal8"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+  </div>  
+  </div>
+</div>
+<div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content bg-dark text-center text-white">
+          <div class="modal-body pt-1">
+              <img src="assets/media/9.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+              <p class="mt-4">The English Game is a historical drama series set in the late 19th century. It explores the origins of modern football and the social dynamics surrounding the sport's early development. The series focuses on the clash between working-class players and the privileged elite, highlighting the transformative power of the game and its impact on society.
+              </p>
+              <h6 class="fw-bold text-danger">Director: <span class="text-white">Julian Fellowes</span></h6>
+              <h6 class="fw-bold text-danger">Category: <span class="text-white">Sports</span></h6>
+              <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9.1/10</span></h6>
+          </div>
+          <div class="modal-footer border-0">
+              <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+              <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+    
+    <div class="col">
+      <div class="card">
+          <img class="card-img-top" src="assets/media/18.png" alt="Card image cap">
+          <div class="card-body">
+            <div class="d-flex flex-column align-items-center justify-content-between">
+              <h5 class="card-title fw-bold myHoverTitle text-uppercase">Dogman</h5>
+              <span class="fw-bold">Category: <span class="text-info text-uppercase">Comedy</span></span>
+              <span class="fw-bold">User ratings: <span class="text-warning">9.1/10</span></span>
+            <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal17"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+          </div>  
+          </div>
+      </div>
+      <div class="modal fade" id="myModal17" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content bg-dark text-center text-white">
+                  <div class="modal-body pt-1">
+                      <img src="assets/media/18.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                      <p class="mt-4">Dogman is an Italian crime drama film inspired by true events. The story revolves around Marcello, a mild-mannered dog groomer who becomes involved with Simone, a violent and unpredictable ex-boxer. Marcello's loyalty and desire for acceptance lead him down a dangerous path as he becomes entangled in Simone's criminal activities.</p>
+                      <h6 class="fw-bold text-danger">Director: <span class="text-white">Matteo Garrone</span></h6>
+                      <h6 class="fw-bold text-danger">Category: <span class="text-white">Comedy</span></h6>
+                      <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9.1/10</span></h6>
+                  </div>
+                  <div class="modal-footer border-0">
+                      <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                      <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+              </div>
+            </div>
+
+            <div class="container-fluid position-relative myButtonHoverArrow p-0">
+
+                <i class="scrollLeft"><ion-icon name="chevron-back-outline"></ion-icon></i>
+                <i class="scrollRight"><ion-icon name="chevron-forward-outline"></ion-icon></i>
+                <h3 class="myTitle px-4">New Releases</h3>
+                <div class="row scroll-horizontal p-4 ms-0">
+
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/media/13.png" alt="Card image cap">
+                            <div class="card-body">
+                              <div class="d-flex flex-column align-items-center justify-content-between">
+                                <h5 class="card-title fw-bold myHoverTitle text-uppercase">Beauty</h5>
+                                <span class="fw-bold">Category: <span class="text-info text-uppercase">Romance</span></span>
+                                <span class="fw-bold">User ratings: <span class="text-warning">7.4/10</span></span>
+                              <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal12"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+                            </div>  
+                            </div>
+                        </div>
+                        <div class="modal fade" id="myModal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content bg-dark text-center text-white">
+                                    <div class="modal-body pt-1">
+                                        <img src="assets/media/13.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                                        <p class="mt-4">Collateral Beauty is a poignant drama film that follows the story of a successful advertising executive named Howard, who is deeply grieving the loss of his daughter. In an attempt to cope with his pain, he begins writing letters to Love, Time, and Death. Unexpected encounters with three mysterious individuals force him to confront the meaning of life, love, and healing.
+                                        </p>
+                                        <h6 class="fw-bold text-danger">Director: <span class="text-white">David Frankel</span></h6>
+                                        <h6 class="fw-bold text-danger">Category: <span class="text-white">Romance</span></h6>
+                                        <h6 class="fw-bold text-danger">User ratings: <span class="text-white">7.4/10</span></h6>
+                                    </div>
+                                    <div class="modal-footer border-0">
+                                        <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                                        <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/media/15.png" alt="Card image cap">
+                            <div class="card-body">
+                              <div class="d-flex flex-column align-items-center justify-content-between">
+                                <h5 class="card-title fw-bold myHoverTitle text-uppercase">Freud</h5>
+                                <span class="fw-bold">Category: <span class="text-info text-uppercase">Crime</span></span>
+                                <span class="fw-bold">User ratings: <span class="text-warning">9.9/10</span></span>
+                              <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal14"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+                            </div>  
+                            </div>
+                        </div>
+                        <div class="modal fade" id="myModal14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content bg-dark text-center text-white">
+                                    <div class="modal-body pt-1">
+                                        <img src="assets/media/15.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                                        <p class="mt-4">Freud is a historical crime thriller series that reimagines the early years of renowned psychoanalyst Sigmund Freud. Set in 19th-century Vienna, Freud finds himself entangled in a dark mystery involving a serial killer. Blending elements of psychology and the occult, he uses his groundbreaking theories to solve the chilling crimes while confronting his own demons.</p>
+                                        <h6 class="fw-bold text-danger">Director: <span class="text-white">Marvin Kren</span></h6>
+                                        <h6 class="fw-bold text-danger">Category: <span class="text-white">Crime</span></h6>
+                                        <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9.9/10</span></h6>
+                                    </div>
+                                    <div class="modal-footer border-0">
+                                        <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                                        <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/media/16.png" alt="Card image cap">
+                            <div class="card-body">
+                              <div class="d-flex flex-column align-items-center justify-content-between">
+                                <h5 class="card-title fw-bold myHoverTitle text-uppercase">Grace</h5>
+                                <span class="fw-bold">Category: <span class="text-info text-uppercase">Comedy</span></span>
+                                <span class="fw-bold">User ratings: <span class="text-warning">9.5/10</span></span>
+                              <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal15"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+                            </div>  
+                            </div>
+                        </div>
+                        <div class="modal fade" id="myModal15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content bg-dark text-center text-white">
+                                    <div class="modal-body pt-1">
+                                        <img src="assets/media/16.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                                        <p class="mt-4">Grace and Frankie is a comedy-drama series that follows the lives of two women, Grace and Frankie, who find themselves unexpectedly thrown together when their husbands announce they are in love with each other and plan to get married. As they navigate this new chapter, Grace and Frankie form an unlikely friendship and discover new adventures and self-discovery in their golden years.</p>
+                                        <h6 class="fw-bold text-danger">Director: <span class="text-white">Marta Kauffman, Howard J. Morris</span></h6>
+                                        <h6 class="fw-bold text-danger">Category: <span class="text-white">Comedy</span></h6>
+                                        <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9.5/10</span></h6>
+                                    </div>
+                                    <div class="modal-footer border-0">
+                                        <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                                        <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/media/17.png" alt="Card image cap">
+                            <div class="card-body">
+                              <div class="d-flex flex-column align-items-center justify-content-between">
+                                <h5 class="card-title fw-bold myHoverTitle text-uppercase">Let Yourself Go</h5>
+                                <span class="fw-bold">Category: <span class="text-info text-uppercase">Comedy</span></span>
+                                <span class="fw-bold">User ratings: <span class="text-warning">9.6/10</span></span>
+                              <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal16"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+                            </div>  
+                            </div>
+                        </div>
+                        <div class="modal fade" id="myModal16" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content bg-dark text-center text-white">
+                                    <div class="modal-body pt-1">
+                                        <img src="assets/media/17.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                                        <p class="mt-4">Let Yourself Go is an Italian comedy film that tells the story of Elia, a psychoanalyst who leads a sedentary lifestyle. When his doctor advises him to start exercising, he reluctantly hires Claudia, a young personal trainer. Through their unlikely bond, Elia begins to let go of his inhibitions and embraces a newfound zest for life.</p>
+                                        <h6 class="fw-bold text-danger">Director: <span class="text-white">Francesco Amato</span></h6>
+                                        <h6 class="fw-bold text-danger">Category: <span class="text-white">Comedy</span></h6>
+                                        <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9.6/10</span></h6>
+                                    </div>
+                                    <div class="modal-footer border-0">
+                                        <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                                        <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" src="assets/media/18.png" alt="Card image cap">
+                            <div class="card-body">
+                              <div class="d-flex flex-column align-items-center justify-content-between">
+                                <h5 class="card-title fw-bold myHoverTitle text-uppercase">Dogman</h5>
+                                <span class="fw-bold">Category: <span class="text-info text-uppercase">Comedy</span></span>
+                                <span class="fw-bold">User ratings: <span class="text-warning">9.1/10</span></span>
+                              <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal17"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+                            </div>  
+                            </div>
+                        </div>
+                        <div class="modal fade" id="myModal17" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content bg-dark text-center text-white">
+                                    <div class="modal-body pt-1">
+                                        <img src="assets/media/18.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                                        <p class="mt-4">Dogman is an Italian crime drama film inspired by true events. The story revolves around Marcello, a mild-mannered dog groomer who becomes involved with Simone, a violent and unpredictable ex-boxer. Marcello's loyalty and desire for acceptance lead him down a dangerous path as he becomes entangled in Simone's criminal activities.</p>
+                                        <h6 class="fw-bold text-danger">Director: <span class="text-white">Matteo Garrone</span></h6>
+                                        <h6 class="fw-bold text-danger">Category: <span class="text-white">Comedy</span></h6>
+                                        <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9.1/10</span></h6>
+                                    </div>
+                                    <div class="modal-footer border-0">
+                                        <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                                        <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+        
+                  <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/media/1.png" alt="Card image cap">
+                        <div class="card-body">
+                          <div class="d-flex flex-column align-items-center justify-content-between">
+                            <h5 class="card-title fw-bold myHoverTitle text-uppercase">Unorthodox</h5>
+                            <span class="fw-bold">Category: <span class="text-info text-uppercase">Drama</span></span>
+                            <span class="fw-bold">User ratings: <span class="text-warning">8.7/10</span></span>
+                          <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+                        </div>  
+                        </div>
+                    </div>
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content bg-dark text-center text-white">
+                                <div class="modal-header border-0 m-0 p-0 mt-1">
+                                    <h5 class="modal-title text-uppercase m-auto fw-bold text-white" id="exampleModalLabel">Unorthodox</h5>
+                                </div>
+                                <div class="modal-body pt-1">
+                                    <img src="assets/media/1.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                                    <p class="mt-4">Nineteen-year-old Esty is an ultra-Orthodox Chassidic girl who lives in Brooklyn and is compelled to follow the strict rules of her community. After a year of arranged marriage, she decides to escape to Berlin and start a new life.</p>
+                                    <h6 class="fw-bold text-danger">Director: <span class="text-white">Maria Schrader</span></h6>
+                                    <h6 class="fw-bold text-danger">Category: <span class="text-white">Drama</span></h6>
+                                    <h6 class="fw-bold text-danger">User ratings: <span class="text-white">8.7/10</span></h6>
+                                </div>
+                                <div class="modal-footer border-0">
+                                    <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                                    <button type="button" class="btn btn-black text-white fw-bold myAddedBtn">Add to my list</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col">
+                  <div class="card">
+                      <img class="card-img-top" src="assets/media/2.png" alt="Card image cap">
+                      <div class="card-body">
+                        <div class="d-flex flex-column align-items-center justify-content-between">
+                          <h5 class="card-title fw-bold myHoverTitle text-uppercase">After Life</h5>
+                          <span class="fw-bold">Category: <span class="text-info text-uppercase">Drama</span></span>
+                          <span class="fw-bold">User ratings: <span class="text-warning">9/10</span></span>
+                        <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal1"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+                      </div>  
+                      </div>
+                  </div>
+                  <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                          <div class="modal-content bg-dark text-center text-white">
+                              <div class="modal-header border-0 m-0 p-0 mt-1">
+                                  <h5 class="modal-title text-uppercase m-auto fw-bold text-white" id="exampleModalLabel">After Life</h5>
+                              </div>
+                              <div class="modal-body pt-1">
+                                  <img src="assets/media/2.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                                  <p class="mt-4">After Life is a dark comedy-drama series created by Ricky Gervais. It follows Tony, a grieving widower who contemplates suicide but decides to live long enough to punish the world by saying and doing whatever he wants. Through his journey, he learns the importance of kindness and human connections.</p>
+                                  <h6 class="fw-bold text-danger">Director: <span class="text-white">Ricky Gervais</span></h6>
+                                  <h6 class="fw-bold text-danger">Category: <span class="text-white">Drama</span></h6>
+                                  <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9/10</span></h6>
+                              </div>
+                              <div class="modal-footer border-0">
+                                  <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                                  <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+        
+              <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="assets/media/3.png" alt="Card image cap">
+                    <div class="card-body">
+                      <div class="d-flex flex-column align-items-center justify-content-between">
+                        <h5 class="card-title fw-bold myHoverTitle text-uppercase">VIS a VIS</h5>
+                        <span class="fw-bold">Category: <span class="text-info text-uppercase">Thriller</span></span>
+                        <span class="fw-bold">User ratings: <span class="text-warning">7.5/10</span></span>
+                      <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal2"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+                    </div>  
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content bg-dark text-center text-white">
+                            <div class="modal-header border-0 m-0 p-0 mt-1">
+                                <h5 class="modal-title text-uppercase m-auto fw-bold text-white" id="exampleModalLabel">VIS a VIS</h5>
+                            </div>
+                            <div class="modal-body pt-1">
+                                <img src="assets/media/3.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                                <p class="mt-4">Vis a Vis is a Spanish thriller series that revolves around Macarena Ferreiro, a young woman who is imprisoned after being manipulated into committing financial fraud. Inside the high-security prison, she must navigate the dangerous dynamics, form alliances, and uncover dark secrets to survive.</p>
+                                <h6 class="fw-bold text-danger">Director: <span class="text-white">Iván Escobar, Álex Pina, Esther Martínez Lobato</span></h6>
+                                <h6 class="fw-bold text-danger">Category: <span class="text-white">Thriller</span></h6>
+                                <h6 class="fw-bold text-danger">User ratings: <span class="text-white">7.5/10</span></h6>
+                            </div>
+                            <div class="modal-footer border-0">
+                                <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                                <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="assets/media/14.png" alt="Card image cap">
+                    <div class="card-body">
+                      <div class="d-flex flex-column align-items-center justify-content-between">
+                        <h5 class="card-title fw-bold myHoverTitle text-uppercase">Self-Made</h5>
+                        <span class="fw-bold">Category: <span class="text-info text-uppercase">Drama</span></span>
+                        <span class="fw-bold">User ratings: <span class="text-warning">8.7/10</span></span>
+                      <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal30"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+                    </div>  
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal30" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content bg-dark text-center text-white">
+                            <div class="modal-header border-0 m-0 p-0 mt-1">
+                                <h5 class="modal-title text-uppercase m-auto fw-bold text-white" id="exampleModalLabel">Unorthodox</h5>
+                            </div>
+                            <div class="modal-body pt-1">
+                                <img src="assets/media/14.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                                <p class="mt-4">
+                                    The incredible story of Madam C.J. Walker, the first African-American woman to become a millionaire. A woman who built her success relying solely on her own strength.</p>
+                                <h6 class="fw-bold text-danger">Director: <span class="text-white">Kasi Lemmons</span></h6>
+                                <h6 class="fw-bold text-danger">Category: <span class="text-white">Drama</span></h6>
+                                <h6 class="fw-bold text-danger">User ratings: <span class="text-white">8.7/10</span></h6>
+                            </div>
+                            <div class="modal-footer border-0">
+                                <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                                <button type="button" class="btn btn-black text-white fw-bold myAddedBtn">Add to my list</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col">
+              <div class="card">
+                  <img class="card-img-top" src="assets/media/4.png" alt="Card image cap">
+                  <div class="card-body">
+                    <div class="d-flex flex-column align-items-center justify-content-between">
+                      <h5 class="card-title fw-bold myHoverTitle text-uppercase">The Place</h5>
+                      <span class="fw-bold">Category: <span class="text-info text-uppercase">Mystery</span></span>
+                      <span class="fw-bold">User ratings: <span class="text-warning">9.5/10</span></span>
+                    <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal3"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+                  </div>  
+                  </div>
+              </div>
+              <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                      <div class="modal-content bg-dark text-center text-white">
+                          <div class="modal-header border-0 m-0 p-0 mt-1">
+                              <h5 class="modal-title text-uppercase m-auto fw-bold text-white" id="exampleModalLabel">The Place</h5>
+                          </div>
+                          <div class="modal-body pt-1">
+                              <img src="assets/media/4.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                              <p class="mt-4">The Place is an Italian drama series based on the 2017 film of the same name. It explores the enigmatic story of a mysterious man who sits alone in a café, granting visitors' desires in exchange for completing mysterious tasks. Each episode delves into the moral dilemmas faced by the characters seeking his help.</p>
+                              <h6 class="fw-bold text-danger">Director: <span class="text-white">Paolo Genovese</span></h6>
+                              <h6 class="fw-bold text-danger">Category: <span class="text-white">Mystery</span></h6>
+                              <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9.5/10</span></h6>
+                          </div>
+                          <div class="modal-footer border-0">
+                              <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                              <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        
+          <div class="col">
+            <div class="card">
+                <img class="card-img-top" src="assets/media/5.png" alt="Card image cap">
+                <div class="card-body">
+                  <div class="d-flex flex-column align-items-center justify-content-between">
+                    <h5 class="card-title fw-bold myHoverTitle text-uppercase">Summertime</h5>
+                    <span class="fw-bold">Category: <span class="text-info text-uppercase">Romance</span></span>
+                    <span class="fw-bold">User ratings: <span class="text-warning">7.7/10</span></span>
+                  <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal4"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+                </div>  
+                </div>
+            </div>
+            <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content bg-dark text-center text-white">
+                        <div class="modal-body pt-1">
+                            <img src="assets/media/5.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                            <p class="mt-4">Summertime is an Italian coming-of-age drama series set in the beautiful coastal town of Cesenatico. It follows a group of young adults from different backgrounds as they navigate love, friendship, and personal growth during the summer season. The series captures the joys, challenges, and transformative experiences that unfold during this pivotal time in their lives.</p>
+                            <h6 class="fw-bold text-danger">Director: <span class="text-white">Francesco Lagi, Lorenzo Sportiello</span></h6>
+                            <h6 class="fw-bold text-danger">Category: <span class="text-white">Romance</span></h6>
+                            <h6 class="fw-bold text-danger">User ratings: <span class="text-white">7.7/10</span></h6>
+                        </div>
+                        <div class="modal-footer border-0">
+                            <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                            <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col">
+          <div class="card">
+              <img class="card-img-top" src="assets/media/6.png" alt="Card image cap">
+              <div class="card-body">
+                <div class="d-flex flex-column align-items-center justify-content-between">
+                  <h5 class="card-title fw-bold myHoverTitle text-uppercase">Valhalla</h5>
+                  <span class="fw-bold">Category: <span class="text-info text-uppercase">Thriller</span></span>
+                  <span class="fw-bold">User ratings: <span class="text-warning">7.8/10</span></span>
+                <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal5"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+              </div>  
+              </div>
+          </div>
+          <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content bg-dark text-center text-white">
+                      <div class="modal-body pt-1">
+                          <img src="assets/media/6.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                          <p class="mt-4">The Valhalla Murders is an Icelandic crime thriller series that follows a troubled detective named Arnar, who returns to his native Iceland to investigate a series of mysterious murders. Teaming up with a local police officer, Kata, they uncover a dark and twisted web of secrets in their pursuit of the truth.</p>
+                          <h6 class="fw-bold text-danger">Director: <span class="text-white">Thordur Palsson</span></h6>
+                          <h6 class="fw-bold text-danger">Category: <span class="text-white">Thriller</span></h6>
+                          <h6 class="fw-bold text-danger">User ratings: <span class="text-white">7.8/10</span></h6>
+                      </div>
+                      <div class="modal-footer border-0">
+                          <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                          <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card">
+              <img class="card-img-top" src="assets/media/7.png" alt="Card image cap">
+              <div class="card-body">
+                <div class="d-flex flex-column align-items-center justify-content-between">
+                  <h5 class="card-title fw-bold myHoverTitle text-uppercase">Other Grace</h5>
+                  <span class="fw-bold">Category: <span class="text-info text-uppercase">Mystery</span></span>
+                  <span class="fw-bold">User ratings: <span class="text-warning">7.9/10</span></span>
+                <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal6"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+              </div>  
+              </div>
+          </div>
+          <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content bg-dark text-center text-white">
+                      <div class="modal-body pt-1">
+                          <img src="assets/media/7.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                          <p class="mt-4">L'Altra Grace is an Italian psychological drama series centered around Grace, a woman who leads a seemingly perfect life. However, after a tragic event, she begins to question her own identity and sanity. The series explores themes of identity, memory, and the blurred lines between reality and imagination.</p>
+                          <h6 class="fw-bold text-danger">Director: <span class="text-white">Margaret Atwood</span></h6>
+                          <h6 class="fw-bold text-danger">Category: <span class="text-white">Mystery</span></h6>
+                          <h6 class="fw-bold text-danger">User ratings: <span class="text-white">7.9/10</span></h6>
+                      </div>
+                      <div class="modal-footer border-0">
+                          <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                          <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card">
+              <img class="card-img-top" src="assets/media/8.png" alt="Card image cap">
+              <div class="card-body">
+                <div class="d-flex flex-column align-items-center justify-content-between">
+                  <h5 class="card-title fw-bold myHoverTitle text-uppercase">Virgin River</h5>
+                  <span class="fw-bold">Category: <span class="text-info text-uppercase">Romance</span></span>
+                  <span class="fw-bold">User ratings: <span class="text-warning">8.1/10</span></span>
+                <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal7"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+              </div>  
+              </div>
+          </div>
+          <div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content bg-dark text-center text-white">
+                      <div class="modal-body pt-1">
+                          <img src="assets/media/8.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                          <p class="mt-4">Virgin River is a heartwarming drama series based on the novels by Robyn Carr. Melinda Monroe, a nurse practitioner, moves to the remote town of Virgin River for a fresh start. As she navigates her new life and forms connections with the residents, she discovers healing, love, and unexpected challenges along the way.
+                          </p>
+                          <h6 class="fw-bold text-danger">Director: <span class="text-white">Tim Matheson, Sue Tenney</span></h6>
+                          <h6 class="fw-bold text-danger">Category: <span class="text-white">Romance</span></h6>
+                          <h6 class="fw-bold text-danger">User ratings: <span class="text-white">8.1/10</span></h6>
+                      </div>
+                      <div class="modal-footer border-0">
+                          <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                          <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card">
+              <img class="card-img-top" src="assets/media/9.png" alt="Card image cap">
+              <div class="card-body">
+                <div class="d-flex flex-column align-items-center justify-content-between">
+                  <h5 class="card-title fw-bold myHoverTitle text-uppercase">English Game</h5>
+                  <span class="fw-bold">Category: <span class="text-info text-uppercase">Sports</span></span>
+                  <span class="fw-bold">User ratings: <span class="text-warning">9.1/10</span></span>
+                <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal8"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+              </div>  
+              </div>
+          </div>
+          <div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content bg-dark text-center text-white">
+                      <div class="modal-body pt-1">
+                          <img src="assets/media/9.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                          <p class="mt-4">The English Game is a historical drama series set in the late 19th century. It explores the origins of modern football and the social dynamics surrounding the sport's early development. The series focuses on the clash between working-class players and the privileged elite, highlighting the transformative power of the game and its impact on society.
+                          </p>
+                          <h6 class="fw-bold text-danger">Director: <span class="text-white">Julian Fellowes</span></h6>
+                          <h6 class="fw-bold text-danger">Category: <span class="text-white">Sports</span></h6>
+                          <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9.1/10</span></h6>
+                      </div>
+                      <div class="modal-footer border-0">
+                          <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                          <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card">
+              <img class="card-img-top" src="assets/media/10.png" alt="Card image cap">
+              <div class="card-body">
+                <div class="d-flex flex-column align-items-center justify-content-between">
+                  <h5 class="card-title fw-bold myHoverTitle text-uppercase">Kominsky</h5>
+                  <span class="fw-bold">Category: <span class="text-info text-uppercase">Comedy</span></span>
+                  <span class="fw-bold">User ratings: <span class="text-warning">7.7/10</span></span>
+                <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal9"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+              </div>  
+              </div>
+          </div>
+          <div class="modal fade" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content bg-dark text-center text-white">
+                      <div class="modal-body pt-1">
+                          <img src="assets/media/10.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                          <p class="mt-4">Il Metodo Kominsky is a comedy-drama series created by Chuck Lorre. It follows the story of Sandy Kominsky, an aging acting coach, and his best friend Norman Newlander as they navigate the ups and downs of life, career, and relationships in the later stages of their lives. The series explores themes of friendship, mortality, and the pursuit of happiness.
+                          </p>
+                          <h6 class="fw-bold text-danger">Director: <span class="text-white">Chuck Lorre</span></h6>
+                          <h6 class="fw-bold text-danger">Category: <span class="text-white">Comedy</span></h6>
+                          <h6 class="fw-bold text-danger">User ratings: <span class="text-white">7.7/10</span></h6>
+                      </div>
+                      <div class="modal-footer border-0">
+                          <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                          <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card">
+              <img class="card-img-top" src="assets/media/11.png" alt="Card image cap">
+              <div class="card-body">
+                <div class="d-flex flex-column align-items-center justify-content-between">
+                  <h5 class="card-title fw-bold myHoverTitle text-uppercase">Love Pact</h5>
+                  <span class="fw-bold">Category: <span class="text-info text-uppercase">Romantic</span></span>
+                  <span class="fw-bold">User ratings: <span class="text-warning">9.5/10</span></span>
+                <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal10"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+              </div>  
+              </div>
+          </div>
+          <div class="modal fade" id="myModal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content bg-dark text-center text-white">
+                      <div class="modal-body pt-1">
+                          <img src="assets/media/11.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                          <p class="mt-4">Love Pact is a romantic drama series that revolves around the intertwined lives of two individuals who make a pact to enter into a contractual relationship for personal gain. As their relationship evolves, they discover the complexities of love and the power of genuine connections, challenging the boundaries of their initial agreement.
+                          </p>
+                          <h6 class="fw-bold text-danger">Director: <span class="text-white">Anya Adams</span></h6>
+                          <h6 class="fw-bold text-danger">Category: <span class="text-white">Romantic</span></h6>
+                          <h6 class="fw-bold text-danger">User ratings: <span class="text-white">9.5/10</span></h6>
+                      </div>
+                      <div class="modal-footer border-0">
+                          <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                          <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card">
+              <img class="card-img-top" src="assets/media/12.png" alt="Card image cap">
+              <div class="card-body">
+                <div class="d-flex flex-column align-items-center justify-content-between">
+                  <h5 class="card-title fw-bold myHoverTitle text-uppercase">Las Flores</h5>
+                  <span class="fw-bold">Category: <span class="text-info text-uppercase">Comedy</span></span>
+                  <span class="fw-bold">User ratings: <span class="text-warning">7.3/10</span></span>
+                <button class="border-0 bg-transparent text-white fw-bold d-flex align-items-center mt-2" data-bs-toggle="modal" data-bs-target="#myModal11"><span class="me-1">WATCH NOW!</span><ion-icon class="myWatchIcon" name="play-outline"></ion-icon></button>
+              </div>  
+              </div>
+          </div>
+          <div class="modal fade" id="myModal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content bg-dark text-center text-white">
+                      <div class="modal-body pt-1">
+                          <img src="assets/media/12.png" style="width: 100%;object-fit: cover;" alt="Movie Image">
+                          <p class="mt-4">La Casa de las Flores is a Mexican dark comedy-drama series that follows the dysfunctional de la Mora family, owners of a successful flower shop. Secrets, scandals, and unexpected events unfold as they navigate through family dynamics, love affairs, and the unveiling of long-held secrets within the walls of their iconic house.
+                          </p>
+                          <h6 class="fw-bold text-danger">Director: <span class="text-white">Manolo Caro</span></h6>
+                          <h6 class="fw-bold text-danger">Category: <span class="text-white">Comedy</span></h6>
+                          <h6 class="fw-bold text-danger">User ratings: <span class="text-white">7.3/10</span></h6>
+                      </div>
+                      <div class="modal-footer border-0">
+                          <button type="button" class="btn btn-danger text-white rounded-3" data-bs-dismiss="modal">CLOSE</button>
+                          <button type="button" class="btn btn-black text-white fw-bold border-0 myAddedBtn">Add to my list</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+                  </div>
+                </div>
+
+
+
+                <!-- ! Footer -->
+
+                <footer>
+                    <div class="social-footer">
+                        <i class="social-footer-icon"><ion-icon name="logo-facebook"></ion-icon></i>
+                        <i class="social-footer-icon"><ion-icon name="logo-instagram"></ion-icon></i>
+                        <i class="social-footer-icon"><ion-icon name="logo-twitter"></ion-icon></i>
+                        <i class="social-footer-icon"><ion-icon name="logo-youtube"></ion-icon></i>
+                    </div>
+                    <div class="footer-row">
+                    <div class="footer-col-1">
+                        <p>Audio and Subtitles</p>
+                        <p>Media Center</p>
+                        <p>Privacy</p>
+                        <p>Contact Us</p>
+                    </div>
+                    <div class="footer-col-2">
+                        <p>Audio Description</p>
+                        <p>Investor Relations</p>
+                        <p>Legal Notices</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <p>Help Center</p>
+                        <p>Jobs</p>
+                        <p>Cookie Prefereces</p>
+                    </div>
+                    <div class="footer-col-4">
+                        <p>Gift Cards</p>
+                        <p>Terms of Use</p>
+                        <p>Corporate Information</p>
+                    </div>
+                    </div>
+                    <div class="footer-end mt-3">
+                        <button class="footer-btn">Service Code</button>
+                        <p class="mt-3">© 1997-2023 Netflix, Inc.</p>
+                    </div>
+                </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
