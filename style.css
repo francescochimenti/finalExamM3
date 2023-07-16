@@ -79,7 +79,6 @@ body {background-color: #141414 !important;}
   opacity: 0;
   transition: opacity linear 0.5s;
 }
-
 .card:hover .card-body {display: block;}
 .card-body:hover{opacity: 1;}
 
