@@ -10,7 +10,7 @@ body {background-color: #141414 !important;}
 .myNavIcon2{font-size: 20px; margin-top: 5px;color: #a8a7a7; border: 1px solid #a5a5a5; padding: 5px 10px;transition: scale linear 0.3s;}
 .profileImg {width: 35px;}
 .myDropIcon {background-color: #141414 !important;}
-.nav-link.active {color: white !important;}
+.nav-link.active {color: white !important;font-weight: bold;scale: 1.1;}
 .my2Nav li a:hover{color: red !important;font-weight: bold;}
 
 /* ! Navbar Hamburger Menu */
@@ -101,3 +101,11 @@ footer p:hover{color: white;cursor: pointer;}
    .footer-row{display: none;}
    .footer-end{display: flex;flex-direction: column;align-items: center;}
 }
+
+/* ! HOME */
+
+.mainVideo{width: 100%;height: 100vh;object-fit:cover;position: relative;}
+.home-title-container{position: absolute;top: 60%;left: 100px;}
+.home-title{color: white !important;font-size: 60px;font-family: serif;}
+.home-button{color: white !important;background-color: #7b7b7b59;font-size: 30px;display: flex;align-items: center;border: 0;border-radius: 10px;font-family: serif;}
+#muteButton{position: absolute;top:75%; right: 100px;color: white !important;font-size: 70px;cursor: pointer;}
