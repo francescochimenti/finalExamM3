@@ -1,29 +1,29 @@
 # Guida al Codice del mio Esercizio Finale M3
 ## Live preview: https://francescochimenti.github.io/finalExamM3/index.html
-Ciao a tutti! Sono entusiasta di condividere con voi il percorso che ho intrapreso per sviluppare il mio esercizio finale per il Modulo 3.
+Ciao a tutti, oggi vi parlo un po' del mio ultimo progettino per il Modulo 3, spero vi piaccia.
 
-## Dettagli del Mockup
+## Un'occhiata al Mockup
 
-Ho iniziato replicando con cura il mockup fornitoci. Ogni elemento, dal layout ai colori, è stato considerato e replicato nel modo più preciso possibile per garantire la fedeltà al design originale.
+Mi sono messo all'opera cercando di copiare il più possibile il mockup che ci hanno dato. Ho cercato di fare attenzione a ogni dettaglio, dai colori alla disposizione delle cose, così da essere il più fedele possibile all'originale.
 
-## Introduzione della Home Page
+## La mia Home Page
 
-Ho deciso di arricchire il progetto andando oltre la richiesta iniziale. Così, ho implementato una pagina home, raggiungibile tramite il link "Home" nella barra di navigazione. Questa funzionalità, sebbene non fosse obbligatoria, rende il sito più facile da navigare e dona una sensazione di completezza.
+Non contento, ho deciso di aggiungere un po' di carne al fuoco e ho messo su una pagina home. Non era richiesta, ma credo che il sito ne guadagni in navigabilità e in termini di completezza. Potete raggiungerla cliccando su "Home" nel menu di navigazione.
 
-## Creazione di Caroselli Personalizzati
+## I miei Caroselli Fatti in Casa
 
-Ho sviluppato caroselli personalizzati da zero, senza l'uso di Bootstrap o di altri framework. Questi caroselli, oltre ad offrire un'interfaccia accattivante, mostrano le informazioni principali di un film o di una serie TV quando si passa il mouse sopra.
+Poi mi sono inventato dei caroselli personalizzati, fatti a mano, senza ricorrere a Bootstrap o cose del genere. Quando passate il mouse sopra vi mostrano alcune info utili sul film o sulla serie TV di turno.
 
-## Funzionalità del Tasto Play
+## Il Bottone Play
 
-Ho introdotto una funzionalità interattiva che, premendo il tasto play, apre un modale con ulteriori dettagli sul film o sulla serie TV selezionata. Questo elemento, sebbene abbia richiesto un notevole sforzo di sviluppo, arricchisce l'esperienza utente rendendola più coinvolgente.
+Un altro piccolo extra che ho aggiunto è un tasto play che compare quando si è in hover sulle card, quando lo cliccate, vi apre una finestra con ulteriori dettagli sul film o la serie TV che avete selezionato. È stata una bella grana da implementare, ma penso che valga la pena per l'esperienza utente.
 
-## Responsività del Sito
+## Il Sito è Responsive
 
-Un aspetto che tengo sempre in grande considerazione è la responsività. Entrambe le pagine web - quella del mockup e la home page - sono state progettate per essere completamente responsive. Questo significa che si adattano perfettamente a qualsiasi dimensione di schermo, garantendo un'esperienza utente ottimale su tutti i dispositivi.
+Un'altra cosa a cui ho cercato di prestare attenzione è la responsività del sito. Entrambe le pagine, quella del mockup e la home page, dovrebbero adattarsi bene a qualsiasi dimensione di schermo, quindi dovreste poterle godere appieno su tutti i dispositivi.
 
-## Esercizio Extra di JavaScript
+## L'Esercizio Extra di JavaScript
 
-Infine, ho voluto mettere alla prova le mie abilità in JavaScript realizzando l'esercizio extra proposto. Il relativo codice può essere consultato nel file `script.js`.
+Per finire, ho deciso di mettermi alla prova con l'esercizio extra di JavaScript che ci hanno proposto. Se volete dare un'occhiata al codice, lo trovate nel file `script.js`.
 
-Spero che queste informazioni offrano una panoramica chiara e dettagliata del mio lavoro su questo progetto. Grazie per il vostro tempo e attenzione.
+Ecco, spero che queste info vi diano un'idea di cosa ho fatto in questo progetto. Grazie a tutti per l'attenzione.
