@@ -1,6 +1,6 @@
 # Guida al Codice del mio Esercizio Finale M3
 ## Live preview: https://francescochimenti.github.io/finalExamM3/index.html
-Ciao a tutti! Sono entusiasta di condividere con voi il percorso che ho intrapreso per sviluppare il mio esercizio finale per il Modulo 3. Questo progetto è stato una grande opportunità per crescere e apprendere.
+Ciao a tutti! Sono entusiasta di condividere con voi il percorso che ho intrapreso per sviluppare il mio esercizio finale per il Modulo 3.
 
 ## Dettagli del Mockup
 
