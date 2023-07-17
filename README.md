@@ -12,7 +12,7 @@ Ho deciso di arricchire il progetto andando oltre la richiesta iniziale. Così, 
 
 ## Creazione di Caroselli Personalizzati
 
-Inoltre, ho sviluppato caroselli personalizzati da zero, senza l'uso di Bootstrap o di altri framework. Questi caroselli, oltre ad offrire un'interfaccia accattivante, mostrano le informazioni principali di un film o di una serie TV quando si passa il mouse sopra.
+Ho sviluppato caroselli personalizzati da zero, senza l'uso di Bootstrap o di altri framework. Questi caroselli, oltre ad offrire un'interfaccia accattivante, mostrano le informazioni principali di un film o di una serie TV quando si passa il mouse sopra.
 
 ## Funzionalità del Tasto Play
 
@@ -24,6 +24,6 @@ Un aspetto che tengo sempre in grande considerazione è la responsività. Entram
 
 ## Esercizio Extra di JavaScript
 
-Infine, ho voluto mettere alla prova le mie abilità in JavaScript realizzando l'esercizio extra proposto. Il relativo codice può essere consultato nel file `script.js`. Questa sfida mi ha permesso di approfondire la mia conoscenza di JavaScript e di rendere il sito ancora più interattivo.
+Infine, ho voluto mettere alla prova le mie abilità in JavaScript realizzando l'esercizio extra proposto. Il relativo codice può essere consultato nel file `script.js`.
 
 Spero che queste informazioni offrano una panoramica chiara e dettagliata del mio lavoro su questo progetto. Grazie per il vostro tempo e attenzione.
